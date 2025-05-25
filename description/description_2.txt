@@ -1,0 +1,15 @@
+AS 52866 announce 187.156.112.139/23;
+Simulate;
+AS 8309 announce 187.156.112.139/23;
+Simulate;
+AS 28223 show routes 187.156.112.139/23;
+AS 28158 show routes 187.156.112.139/23;
+Change non-BGP policy:
+AS 20473 enable ROV
+AS 52025 enable ROV
+AS 6939 enable ROV
+AS 6424 enable ROV
+end;
+AS 28223 show routes 187.156.112.139/23;
+AS 28158 show routes 187.156.112.139/23;
+AS 268183 show routes 187.156.112.139/23;
